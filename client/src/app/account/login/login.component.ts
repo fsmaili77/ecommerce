@@ -13,16 +13,16 @@ export class LoginComponent {
     email: new FormControl('', [Validators.required, Validators.email]),
     password: new FormControl('', Validators.required)
   })
-  //returnUrl: string;
+  returnUrl: string;
 
   constructor(private accountService: AccountService, private router: Router, 
     private activatedRoute: ActivatedRoute) {
-      // this.returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'] || '/shop'
+       this.returnUrl = this.activatedRoute.snapshot.queryParams['returnUrl'] || '/shop'
   }
 
   onSubmit() {
     this.accountService.login(this.loginForm.value).subscribe({
-      next: () => this.router.navigateByUrl('/shop')
+      next: () => this.router.navigateByUrl(this.returnUrl)
     })
   }
 }

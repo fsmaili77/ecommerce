@@ -13,5 +13,5 @@ For Version controll
 
 # SQLite 
 For development
-# SQL Server 
+# PostgreSQL 
 For production

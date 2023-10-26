@@ -14,7 +14,7 @@
 
 **SQLite** -> Pour le développement
 
-**PostgeSQL** -> Pour la production
+**PostgreSQL** -> Pour la production
 
 # EN
 ## eCommerce App with .NET and Angular
@@ -30,4 +30,4 @@
 
 **SQLite** -> For development
 
-**PostgeSQL** -> For production
+**PostgreSQL** -> For production
